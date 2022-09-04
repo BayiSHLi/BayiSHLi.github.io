@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Statement</title>
+    <style>
+        @font-face {
+	        font-family: Orbitron-Regular;
+	        src: url(../font/Orbitron-Regular.ttf);
+            }
+        @font-face {
+	        font-family: Orbitron-Bold;
+	        src: url(../font/Orbitron-Bold.ttf);
+            }
+        @font-face {
+	        font-family: Orbitron-Black;
+	        src: url(../font/Orbitron-Black.ttf);
+            }
+        @font-face {
+	        font-family: Orbitron-Medium;
+	        src: url(../font/Orbitron-Medium.ttf);
+            }
+        @font-face {
+	        font-family: Mono-Regular;
+	        src: url(../font/FontsFree-Net-Mono-Regular.ttf);
+            }
+        @font-face {
+	        font-family: Orbitron-Light;
+	        src: url(../font/Orbitron-Light.ttf);
+            }
+        @font-face {
+	        font-family: FiraCode-Regular;
+	        src: url(../font/FiraCode-Regular.otf);
+            }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/templatemo_style.css">
+    <link rel="icon" href="./picture/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--End-->
+    <script>
+    fetch('https://v1.hitokoto.cn')
+        .then(function (res){
+        return res.json();
+        })
+        .then(function (data) {
+        var hitokoto = document.getElementById('hitokoto');
+        hitokoto.innerText = data.hitokoto;
+        })
+        .catch(function (err) {
+        console.error(err);
+        })
+    </script>
+
+</head>
+
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+
+<!--这里是上方的留白，万一以后想加个导航什么的呢。。。。-->
+<header class="site-header container animated fadeInDown">
+    <div class="header-wrapper"></div>
+</header>
+
+<div id="menu-container">
+    <div id="menu-1" class="homepage home-section container">
+        <div class="home-intro text-center">
+            <h2 class="welcome-title animated fadeInLeft">
+                Shanghong Li
+                <p class="welcome-title animated fadeInLeft">
+                    Hang in there, get through today.
+                </p>
+            </h2>
+            <p class="welcome-title animated fadeInRight">
+                Hi ! Thank you for being here!
+                <br />
+                Please stay for a little while and allow me to state myself.
+            </p>
+        </div>
+        <div style="border-bottom: 2px solid #46494f;"></div>
+        <br />
+
+        <div class="projects-header">
+            <h2 class="animated fadeInRight">Info</h2>
+            <p class="animated fadeInLeft">
+                My name is Shanghong Li.<br/>
+                I am 25 years old, come from LanZhou.<br/>
+                I finish my undergraduate and postgraduate period in Harbin Institute of technology,<br />
+                major in Control Science and Engineer.<br/>
+                During the past three years,<br/>
+                I studied at Automotive Electronic Engineering Center.<br/>
+                <br/>
+                I’ve systematically learned the theory of control science and some control method.<br/>
+                I focused on the application of the advanced control method in Intelligent Vehicle,<br/>
+                as well as the application of machine learning and computer vision in intelligent vehicles.<br/>
+                I am passionate about implementing the new inspirations in my mind by programming with code.<br/>
+                I would like to go further and further on the road of Science and Engineering.
+            </p>
+        </div>
+        <div style="border-bottom: 2px solid #46494f;"></div>
+        <br /><br />
+
+        <div class="projects-header">
+            <h2 class="animated fadeInLeft">Skills</h2>
+            <p class="animated fadeInRight">
+                As a automotive electronic engineer,<br/>
+                my workflow is building a model in Simulink to achieve my functional requirements,<br/>
+                generating the model into C or C++ code with some automated tools, <br/>
+                embedding the software in the electronic unit. <br/>
+                So, I’m proficient in Matlab and Simulink modeling, also in C and C++ programming. <br/>
+                I used keil or S32 design studio to debug the embedded software,<br/>
+                developed autonomous test scripts, tools and platform to verify my designation.<br/>
+                <br/>
+                I have strong interest on machine learning and deep learning, <br/>
+                especially using them to solve the practical problem in intelligent vehicle. <br/>
+                I am very familiar to the designing and training procedure of deep learning model using Pytorch. <br/>
+                I have rich experience on deploying machine learning or computer vision method on embedded hardware.<br/>
+                I am also proficient in HTML and CSS.<br/>
+            </p>
+        </div>
+        <div style="border-bottom: 2px solid #46494f;"></div>
+        <br /><br />
+
+       <!-- <div class="News">
+            <h2 class="animated fadeInRight">News</h2>
+            <ul class="animated fadeInLeft">
+                <li>2022.06 - Get M.S. in Control Science and Engineering. </li>
+                <li>2021.11 - Award the first-class of 2021-2022 Chinese Academic Scholarship. </li>
+                <li>2021.02 - The article "A Low-Cost and Fast Vehicle Detection Algorithm..." published. </li>
+                <li>2020.10 - Award the first-class of 2020-2021 Chinese Academic Scholarship. </li>
+                <li>2020.06 - Award the Outstanding Graduate of Honors School. </li>
+                <li>2020.06 - Get B.S. in Automation. </li>
+                <li>... </li>
+            </ul>
+        </div>
+        <div style="border-bottom: 2px solid #46494f;"></div>
+        <br /><br />-->
+
+        <div class="News">
+            <h2 class="animated fadeInLeft">Hobby</h2>
+        </div>
+        <div class="projects-holder">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 p-1 animated umScaleIn">
+                    <div class="project-item">
+                        <img src="picture/1.jpg" alt="">
+                        <div class="overlay">
+                            <h4><a href="#" class="tooltip-test" data-toggle="tooltip" >Photography</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 p-2 animated umScaleIn">
+                    <div class="project-item">
+                        <img src="picture/2.png" alt="">
+                        <div class="overlay">
+                            <h4><a href="#" class="tooltip-test" data-toggle="tooltip">Astronomical</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 p-3 animated umScaleIn">
+                    <div class="project-item">
+                        <img src="picture/3.jpg" alt="">
+                        <div class="overlay">
+                            <h4><a href="#" class="tooltip-test" data-toggle="tooltip" >Basketball</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 p-4 animated umScaleIn">
+                    <div class="project-item animated umScaleIn">
+                        <img src="picture/4.jpg" alt="">
+                        <div class="overlay">
+                            <h4><a href="#" class="tooltip-test" data-toggle="tooltip">DOTA</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="project-item p-5 animated umScaleIn">
+                        <img src="picture/5.jpg" alt="">
+                        <div class="overlay">
+                            <h4><a href="#" class="tooltip-test" data-toggle="tooltip">F1</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="project-item p-6 animated umScaleIn">
+                        <img src="picture/6.jpg" alt="">
+                        <div class="overlay">
+                            <h4><a href="#" class="tooltip-test" data-toggle="tooltip">musical</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="project-item p-7 animated umScaleIn">
+                        <img src="picture/7.jpg" alt="">
+                        <div class="overlay">
+                            <h4><a href="#" class="tooltip-test" data-toggle="tooltip">science fiction</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div style="border-bottom: 2px solid #46494f;"></div> <br />
+            <footer>
+                <div class="blog-header text-center">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><a href="../index.html">Home</a></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>
+</body>
+</html>
