@@ -607,6 +607,42 @@ span.offer-right {
     margin-left: 120px
 }
 
+.Learning {
+    margin-top: 30px;
+    margin-bottom: 80px;
+    text-align: left;
+}
+
+.Learning h2 {
+    text-align: center;
+    font-weight: 100;
+    color: #bbb;
+    font-size: 36px;
+    margin-bottom: 30px;
+    -moz-animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.Learning p {
+    font-size: 17px;
+    line-height: 1.75em;
+    -moz-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    margin-left: 120px
+
+}
+
+.Learning ul {
+    font-size: 17px;
+    line-height: 1.75em;
+    -moz-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    margin-left: 120px
+}
+
 
 .projects-holder {
     margin-bottom: 80px;
