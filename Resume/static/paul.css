@@ -1,0 +1,359 @@
+@charset "UTF-8";
+
+@font-face {
+	        font-family: Orbitron-Regular;
+	        src: url(../font/Orbitron-Regular.ttf);
+            }
+@font-face {
+	        font-family: Orbitron-Bold;
+	        src: url(../font/Orbitron-Bold.ttf);
+            }
+@font-face {
+	        font-family: Orbitron-Black;
+	        src: url(../font/Orbitron-Black.ttf);
+            }
+@font-face {
+	        font-family: Orbitron-Medium;
+	        src: url(../font/Orbitron-Medium.ttf);
+            }
+@font-face {
+	        font-family: Mono-Regular;
+	        src: url(../font/FontsFree-Net-Mono-Regular.ttf);
+            }
+/* ----
+
+# My Resume
+# By: Dreamer-Paul
+# Last Update: 2018.2.21
+
+一个简洁的橙色调个人简介。
+
+欢迎你加入缤奇，和我们一起改变世界。
+本代码为奇趣保罗原创，并遵守 MIT 开源协议。欢迎访问我的博客：https://paugram.com
+
+---- */
+
+/* 0 - 全局
+-------------------------------- */
+
+
+/* 1 - 页眉
+-------------------------------- */
+
+/* - 侧边栏 */
+.sidebar{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    width: 250px;
+    position: fixed;
+    overflow: hidden;
+    overflow-y: auto;
+    background: #4b4b4b;
+}
+
+/* -- 头像 */
+.sidebar .avatar{
+    width: 160px;
+    height: 160px;
+    margin: 1em auto;
+    background: #9999FF;
+    border-radius: 100%;
+    border: #9999FF 2px solid;
+    transition: transform 0.5s;
+}
+.sidebar .avatar:hover{
+    transform: rotate(1turn);
+}
+.sidebar .avatar img{
+    width: 150px;
+    height: 150px;
+    margin: 0em 0em;
+    background: #9999FF;
+    border-radius: 100%;
+    border: #9999FF 5px solid;
+    transition: transform 0.5s;
+}
+
+/* -- 侧边栏个人信息 */
+
+.sidebar .sidename{
+    margin:  1em auto;
+    font-family: Orbitron-Light;
+    font-size: 20px;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+.sidebar .sidename p{
+    color: #fff;
+    padding: 1em;
+    display: block;
+    text-align: center;
+    transition: background .3s, box-shadow .3s;
+}
+.sidebar .nav a:hover{
+    color:#9999FF;
+    background: rgba(0, 0, 0, .4);
+}
+
+main{
+    margin-left: 250px;
+}
+
+@media screen and (max-width: 1200px) {
+    .sidebar {
+        width: inherit;
+        position: relative;
+
+    }
+    .sidebar .nav{
+        background: #444;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .sidebar .nav a:hover{
+        color:#9999FFF;
+        background: none;
+        box-shadow: 0 -4px 0 #9999FF inset;
+    }
+    main{
+        margin-left: 0;
+    }
+}
+
+@media print{
+    .sidebar{
+        display: none;
+    }
+    main{
+        margin-left: 0;
+    }
+}
+
+/* -- 侧边栏导航 */
+.sidebar .nav{
+    font-family: Orbitron-Bold;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+.sidebar .nav a{
+    color: #eee;
+    padding: 1em;
+    display: block;
+    text-align: center;
+    transition: background .3s, box-shadow .3s;
+}
+.sidebar .nav a:hover{
+    color:#9999FF;
+    background: rgba(0, 0, 0, .4);
+}
+
+main{
+    margin-left: 250px;
+}
+
+@media screen and (max-width: 1200px) {
+    .sidebar {
+        width: inherit;
+        position: relative;
+
+    }
+    .sidebar .nav{
+        background: #444;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .sidebar .nav a:hover{
+        color:#9999FFF;
+        background: none;
+        box-shadow: 0 -4px 0 #9999FF inset;
+    }
+    main{
+        margin-left: 0;
+    }
+}
+
+@media print{
+    .sidebar{
+        display: none;
+    }
+    main{
+        margin-left: 0;
+    }
+}
+
+/* 2 - pdf
+-------------------------------- */
+.navigation {
+  display: inline-block;
+  float: left;
+  position: relative;
+  margin: 0;
+  list-style-type: none;
+}
+
+.navigation__item {
+  display: inline-block;
+  margin: 5px 1px 0 0;
+  line-height: 1em;
+}
+
+.navigation__item a {
+  display: block;
+  position: relative;
+  border-color: #ddd;
+  color: #ddd;
+  opacity: 0.8;
+}
+
+.navigation__item a:hover {
+  background: rgba(0, 0, 0, );
+  color: #9999FF;
+  border-color: #9999FF;
+  opacity: 1;
+}
+
+/* 2 - 介绍
+-------------------------------- */
+.aboutme{
+  color: #6A6AFF;
+  display: inline-block;
+  font-weight:bold;
+  font-size:40px;
+  margin-bottom: 0.5em;
+  margin-top: 0em;
+}
+
+.welcome{
+  color: #6A6AFF;
+  display: inline-block;
+  font-weight:bold;
+  font-size:22px;
+  margin-bottom: 0.3em;
+  margin-top: 0em;
+}
+
+.introduction{
+  color: #777;
+  line-height: 160%;
+  display: inline-block;
+  font-family: Mono-Regular;
+  font-size:16px;
+  margin-bottom: 1.1em;
+  max-width: 750px;
+  letter-spacing: -0.5px;
+}
+
+/* 3 - 背景
+-------------------------------- */
+.wrap{
+    position: relative;
+    background: url(i/pic4.jpg) no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+
+.warp-mask{
+    height:100%;
+    width:100%;
+    background: rgba(0,0,0,.4);
+}
+
+#bar{
+    background-image: url(img/sidebar_bk.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+@media screen and (max-width: 1200px){
+#bar{
+    background-image: url(img/sidebar_bk.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+}
+#info{ background: linear-gradient(-130deg, #aaa 0%, #fff 100%);}
+#edu{ background: linear-gradient(-130deg, #BBBBff 0%, #5555FF 100%); }
+#exp{ background: linear-gradient(-130deg, #aaa 0%, #fff 100%); }
+#pub{ background: linear-gradient(-130deg, #BBBBff 0%, #5555FF 100%);}
+#contact{ background:linear-gradient(-130deg, #aaa 0%, #fff 100%);  }
+
+/* - 遮罩 */
+.bk-overlay{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    position: fixed;
+    animation: fade-in .5s both;
+    -webkit-animation: fade-in .5s both;
+    background: rgba(0, 0, 0, .5);
+}
+
+.bk-overlay.remove{
+    animation: fade-off .5s both;
+    -webkit-animation: fade-off .5s both;
+}
+
+/* - 图片放大 */
+img[bk-image=active]{
+    cursor: pointer;
+    cursor: zoom-in;
+}
+
+.bk-image{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 66;
+    position: fixed;
+    user-select: none;
+}
+
+.bk-image:before{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    animation: fade-in .5s both;
+    -webkit-animation: fade-in .5s both;
+    background: rgba(0, 0, 0, .5);
+}
+
+.bk-image img{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 90%;
+    max-height: 90%;
+    cursor: zoom-out;
+    position: absolute;
+    animation: fade-small-large .3s both;
+    -webkit-animation: fade-small-large .3s both;
+}
+
+.bk-image.remove:before{
+    animation: fade-off .3s both;
+    -webkit-animation: fade-off .3s both;
+}
+
+.bk-image.remove img{
+    animation: fade-large-small .3s both;
+    -webkit-animation: fade-large-small .3s both;
+}
+
+.bk-image img[src$=".jpg"]{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}
+
+

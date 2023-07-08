@@ -1,0 +1,547 @@
+@font-face {
+	        font-family: Orbitron-Regular;
+	        src: url(.../font/Orbitron-Regular.ttf);
+            }
+@font-face {
+	        font-family: Orbitron-Bold;
+	        src: url(.../font/Orbitron-Bold.ttf);
+            }
+@font-face {
+	        font-family: Orbitron-Black;
+	        src: url(.../font/Orbitron-Black.ttf);
+            }
+@font-face {
+	        font-family: Orbitron-Medium;
+	        src: url(.../font/Orbitron-Medium.ttf);
+            }
+@font-face {
+	        font-family: Mono-Regular;
+	        src: url(.../font/FontsFree-Net-Mono-Regular.ttf);
+            }
+@font-face {
+	        font-family: Orbitron-Light;
+	        src: url(.../font/Orbitron-Light.ttf);
+            }
+@font-face {
+	        font-family: FiraCode-Regular;
+	        src: url(.../font/FiraCode-Regular.otf);
+            }
+
+* {
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    width: 100%;
+    color: #353535;
+}
+a {
+    text-decoration: none;
+}
+html p {
+    margin: 0;
+}
+
+.col-3-w, .col-6-w, .col-9-w, .col-5-w, .col-4-w, .col-10-w{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+}
+
+.col-3-w {
+    width: 240px;
+    display: inline-block;
+}
+.col-6-w {
+    width: 48.5%;
+}
+.col-5-w {
+    width: 45%;
+}
+.col-4-w {
+    width: 40%;
+}
+.col-9-w {
+    width: 65%;
+}
+.col-10-w {
+    width: 900px;
+    display: inline-block;
+}
+
+.col-3-qr, .col-6-qr, .col-9-qr, .col-5-qr, .col-4-qr, .col-10-qr{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+}
+
+.col-3-qr {
+    width: 240px;
+    display: inline-block;
+}
+.col-6-qr {
+    width: 48.5%;
+}
+.col-5-qr {
+    width: 45%;
+}
+.col-4-qr {
+    width: 40%;
+}
+.col-9-qr {
+    width: 65%;
+}
+.col-10-qr {
+    width: 800px;
+    display: inline-block;
+}
+
+.col-3, .col-6, .col-9, .col-5, .col-4, .col-10{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+}
+
+.col-3 {
+    width: 32%;
+}
+
+.col-3-abs {
+    width: 290px;
+    display: inline-block;
+}
+
+.col-3-pro {
+    width: 350px;
+    display: inline-block;
+}
+
+.col-5-asb {
+    width: 450px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+.col-6-asb {
+    width: 500px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+.col-7-asb {
+    width: 600px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+.col-6 {
+    width: 48.5%;
+}
+.col-5 {
+    width: 45%;
+}
+.col-4 {
+    width: 40%;
+}
+.col-9 {
+    width: 65%;
+}
+.col-10 {
+    width: 100%;
+}
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+.hide {
+    display: none;
+}
+.hide a {
+    text-decoration: initial;
+    cursor: pointer;
+}
+.pmessage {
+    position: relative;
+}
+.pmessage:hover .hide {
+    position: absolute;
+    display: block;
+    top: 0px;
+    right: 10px;
+    font-size: 14px;
+}
+.project-detail .pmessage:hover .hide {
+    top: 10px;
+}
+.w-experience-detail .pmessage:hover .hide {
+    top: 30px;
+}
+.img-header {
+    width: 1000px;
+    height: 300px;
+    margin-top: 20px; 
+    background-image: url(../img/Group.png);
+}
+.personal-image {
+    background: #9999FF;
+    border: #9999FF 5px solid;
+    border-radius:60%;
+    width: 120px;
+    height: 120px;
+}
+.img-header .content {
+    font-family: Courier;
+    display: inline-block;
+    margin: 128px auto 0 334px;
+    padding: 10px 0px;
+    background: rgba(11,52,79,0.60);
+    width: 313px;
+    color: #fff;
+}
+
+.content p {
+    font-size: 16px;
+    letter-spacing: 0;
+    text-shadow: 0 2px 4px #000000;
+    text-align: center;
+}
+.content strong {
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 14px;
+    text-shadow: initial;
+}
+.information-all, section {
+     margin-top: 0px;
+     margin-bottom: 0px;
+}
+.information-all, main > section, footer > section {
+    padding: 35px 35px;
+}
+.personal, item {
+    display: inline-block;
+}
+.ensprience .item, .skill .item {
+    padding-left: 20px;
+}
+.item ul {
+    padding-left: 15px;
+}
+.lang {
+    margin-top: -5px;
+}
+.item .title {
+    margin: 15px 0; 
+    font-weight: bold;
+    font-size: 16px;
+    color: #022643;
+    letter-spacing: 1.14px;
+}
+.item p, .item li, .item lable {
+    font-size: 14px;
+    color: #022643;
+    line-height: 24px;
+}
+.item lable {
+    font-family: Courier;
+    background: #E4EEF6;
+    padding: 3px;
+    margin-right: 8px;
+    letter-spacing: 0;
+    line-height: 28px;
+    border-radius: 2px;
+    vertical-align: top;
+}
+.ensprience, .skill {
+    border-left: 1px solid #9DAFBE;
+}
+section .title {
+    position: relative;
+    font-weight: bold;
+    font-size: 26px;
+    color: #022643;
+    letter-spacing: 3px;
+    width: 150px;
+    margin: 0 32px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+section .title.about-me {
+    width: 200px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+section .title.work {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+section .title.project {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+section .title.contact-me {
+    width: 200px;
+    margin: 0 282px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+section .title::after, section .title::before {
+    position: absolute;
+}
+section .title::after {
+    top: -15px;
+    left: -5px;
+}
+section .title::before {
+    top: -15px;
+    left: 90px;
+}
+section .title.project::after {
+    content: url(./img/icon1.png)
+}
+section .title.work::after {
+    content: url(./img/icon3.png)
+}
+section .title.enducation::after {
+    content: url(./img/icon5.png)
+}
+section .title.contact-me::after {
+    content: url(./img/icon7.png);
+    left: 10px;
+}
+section .title.project::before {
+    content: url(./img/icon2.png)
+}
+section .title.work::before {
+    content: url(./img/icon4.png)
+}
+section .title.enducation::before {
+    content: url(./img/icon6.png)
+}
+section .title.contact-me::before {
+    content: url(./img/icon8.png)
+}
+
+.project-detail .col-3-pro {
+    margin-top: 50px;
+}
+.project-detail .col-3-pro:not(.endline) {
+    margin-right: 20px;
+}
+.project-detail .button {
+    width: 225px;
+    display: block;
+    background-image: linear-gradient(-130deg, #9999FF 0%, #5555FF 100%);
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration:  none;
+    font-size: 16px;
+    color: #022643;
+    letter-spacing: 1.14px;
+    line-height: 3;
+    z-index: 5;
+}
+.project-detail .link-to {
+    position: relative;
+}
+.project-detail .link-to:hover .shadow {
+    position: absolute;
+    z-index: -1;
+    top: 27px;
+    left: 75px;
+    height: 50px;
+    width: 200px;
+    background: linear-gradient(180deg, #1111FF 0%, #fff 100%);
+    background: -moz-linear-gradient(180deg, #1111FF 0%, #fff 100%);
+    border-radius: 50%;
+    filter: blur(10px);
+}
+
+.project-content {
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.50);
+    border-radius: 5px;
+    padding: 20px;
+    height: 420px;
+    text-align: center; 
+    z-index: 10;
+}
+.project-content p.project-title {
+    font-family: Orbitron-Black;
+    line-height: 26px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #022643;
+    letter-spacing: 1.14px;
+}
+.project-content p.create-time {
+    margin-top: 5px; 
+    font-size: 14px;
+    color: #767E84;
+    letter-spacing: 1px;
+}
+.project-content p.description {
+    font-family:FiraCode-Regular;
+    margin-top: 15px; 
+    text-align: left;
+    font-size: 16px;
+    color: #022643;
+    letter-spacing: -0.5px;
+    line-height: 24px;
+}
+.project-content ul.description
+{
+    text-align: left;
+    margin: 0 0px 0 23px;
+}
+
+.w-experience-content {
+    border-bottom: 1px solid #D6DCE1;
+    padding: 30px 0;  
+}
+.w-experience-content:last-child {
+    border-bottom: none;
+}
+.w-experience-content .logo {
+    width: 20%;
+}
+.w-experience-content .work-content {
+    width: 74%;
+    margin-left:20px;
+}
+.w-experience-content .logo, .w-experience-content .work-content {
+    font-family:FiraCode-Regular;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.work-content ul.research li{
+    font-family: Mono-Regular;
+    font-size: 16px;
+    color: #022643;
+}
+
+.company-logo {
+    background: #FFF;
+    border: #FFF 2px solid;
+        border-radius:100%;
+    width:100px;
+  margin: 20px 0 0 60px;
+}
+
+.company-Pic {
+    background: #FFF;
+    border: #FFF 2px solid;
+        border-radius:0%;
+    width:150px;
+    margin: 20px 0 0 50px;
+}
+
+.work-content p.create-time {
+    font-family:Mono-Regular;
+    font-size: 14px;
+    color: #022643;
+    letter-spacing: 1px;
+}
+.work-content p.job {
+    font-family: Orbitron-Medium;
+    font-weight: bold;
+    font-size: 16px;
+    color: #022643;
+    letter-spacing: 1.14px;
+    margin-bottom: 1px;
+}
+
+.work-content p.detail {
+    font-family: Orbitron-Regular;
+    font-size: 16px;
+    color: #022643;
+    letter-spacing: 1.14px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.work-content a.detail {
+    font-family: Orbitron-Regular;
+    font-size: 16px;
+    color: #022643;
+    letter-spacing: 1.14px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.work-content p.key-word {
+    font-size:16px;
+    margin-top: 10px; 
+}
+
+.work-content p.author {
+    font-size:16px;
+    margin-top: 10px;
+}
+
+.enducation-detail {
+    padding: 50px 0 30px 0; 
+}
+.enducation-detail .item {
+    padding-left: 50px;
+}
+.enducation-title, .name {
+    font-weight: bold;
+    font-size: 16px;
+    color: #022643;
+    letter-spacing: 1.14px;
+}
+.personal-message {
+    display: inline-block;
+    width: 1000px;
+    text-align: center;
+    margin: 40px 0px 0px 170px;
+}
+.personal-message .name {
+    margin: 10px 0;
+}
+.personal-message .contact {
+    margin: 40px 0 20px 0;
+}
+.icon-container {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.icon-container .icon {
+    margin-right: 30px;
+}
+.icon-container .icon:last-child {
+    margin: 0;
+}
+.icon img {
+    width: 30px;
+    height: 30px;
+}
+.qr-image {
+    width: 120px;
+    height: 120px;
+}
+.contact .qrcode {
+    border-right: 1px solid #CDD8E1; 
+}
+.contact p {
+    letter-spacing: 1.43px;
+} 
+p.footer {
+    text-align: center;
+    font-size: 12px;
+    color: #9A9A9A;
+    letter-spacing: 1.22px;
+    padding: 10px 0;
+}
