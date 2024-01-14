@@ -305,29 +305,29 @@ section .title::before {
     left: 90px;
 }
 section .title.project::after {
-    content: url(./img/icon1.png)
+    content: url(img/icon1.png)
 }
 section .title.work::after {
-    content: url(./img/icon3.png)
+    content: url(img/icon3.png)
 }
 section .title.enducation::after {
-    content: url(./img/icon5.png)
+    content: url(img/icon5.png)
 }
 section .title.contact-me::after {
-    content: url(./img/icon7.png);
+    content: url(img/icon7.png);
     left: 10px;
 }
 section .title.project::before {
-    content: url(./img/icon2.png)
+    content: url(img/icon2.png)
 }
 section .title.work::before {
-    content: url(./img/icon4.png)
+    content: url(img/icon4.png)
 }
 section .title.enducation::before {
-    content: url(./img/icon6.png)
+    content: url(img/icon6.png)
 }
 section .title.contact-me::before {
-    content: url(./img/icon8.png)
+    content: url(img/icon8.png)
 }
 
 .project-detail .col-3-pro {
